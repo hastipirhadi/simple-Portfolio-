@@ -10,6 +10,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-items: normal;
   background-color: rgba(249, 250, 255, 1);
 }
@@ -100,9 +101,9 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  left: 25%;
-  top: 773px;
+  margin-left: 20%;
+  margin-top: 88px;
+  flex-shrink: 1;
 }
 .section-two h2 {
   font-family: Playfair Display;
@@ -111,12 +112,15 @@ li {
   padding-bottom: 4px;
 }
 .div-three {
-  width: 992px;
-  height: 524px;
   margin-top: 80px;
+  border-radius: 25px;
   background-color: white;
-  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .div-four {
   width: 406px;
   height: 232px;
@@ -131,11 +135,14 @@ li {
   font-family: Playfair Display;
   line-height: 150%;
   margin-bottom: 24px;
+  font-weight: 700;
 }
 .caption-two {
-  color: #828282;
+  color: rgba(130, 130, 130, 1);
   font-family: Nunito;
   font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
 }
 #button {
   border-radius: 24px;
@@ -143,5 +150,38 @@ li {
   height: 43px;
   border: 1px solid black;
   padding: 8px 24px 8 px 24px;
-  background-color: rgb(255, 255, 255);
+  margin-top: 24px;
+  background-color: white;
+  color: black;
+}
+
+.footer {
+padding-bottom: 50px;
+  width: 192px;
+  height: 102px;
+  position: relative;
+  left: 700px;
+  top: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+}
+
+#icon {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#icon li {
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-family: Nunito;
+  font-size: 16px;
+  color: rgba(130, 130, 130, 1);
+  padding-left: 10px;
 }
